@@ -12,10 +12,10 @@ const sendEmail = (to, from, subject, text) => {
     sgMail.send(msg, function(err, result){
 
         if(err) {
-            console.log('email not went')
+            console.log('email not sent'+err)
         } 
         else{
-            console.log('Email sent');
+            console.log('Email sent'+err);
         }
     })
 };
