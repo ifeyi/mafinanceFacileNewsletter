@@ -1,0 +1,104 @@
+*, html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: var(--baarTransition);
+}
+:root{
+    --baarBlue: #08247F;
+    --baarLightBlue: #8C9DD5;
+    --baarDarkBlue: #041240;
+    --baarWhite: #F9F9F9;
+    --baarPureWhite: #FFF;
+    --baarBlack: #1B1B1B;
+    --baarGray: #999;
+    --baarLightGray: #CCC;
+    --baarLighterGray: #F0F0F0;
+    --baarDarkGray: #777;
+    --baarDarkerGray: #444;
+    --baarTransition: all .5s ease-in-out;
+    --baarBoxShadow: 0 0 100px 0 rgba(0, 0, 0, .1);
+}
+
+body{
+    color: var(--baarWhite);
+    font-family: 'Philosopher', sans-serif;
+    background-color: var(--baarBlue);
+    line-height: 1.5;
+}
+
+.baarContainer{
+    width: 768px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+.baarFlex{
+    display: flex;
+}
+#baarFormInput{
+    background-color: var(--baarWhite);
+    padding: 8px;
+    justify-content: space-between;
+}
+#baarInput, #baarInput:focus{
+    outline: 0;
+    width: 100%;
+    border: 0;
+    height: 100%;
+    padding: 0 32px;
+    box-shadow: 0;
+    background-color: transparent;
+}
+.frontend-components-free_email_form-module__emailInputWrapper--BXNrb{
+    width: 80%;
+}
+.baarBtn{
+    font-family: 'Philosopher', sans-serif;
+    transition: var(--baarTransition);
+    background-color: var(--baarBlue);
+    color: var(--baarWhite);
+    padding: 16px 24px;
+    border: 0;
+    box-shadow: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.baarBtn:hover, .baarBtn:focus {
+    background-color: var(--baarLightBlue);
+}
+#baarFormCheckbox{
+    margin-top: 16px;
+}
+#baarCheckbox{
+    margin-right: 8px;
+}
+h1{
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-size: 64px;
+    line-height: 1;
+}
+#baarHeader .st0{fill:#FFFFFF;}
+#baarHeader svg{
+    height: 128px;
+}
+/* END FOOTER */
+
+#entry #main{
+    background-color: var(--baarBlue);
+}
+
+@media screen and (max-width:800px){
+
+    h1{
+        font-size: 48px;
+        line-height: 1.2;
+    }
+    .baarContainer{
+        width: 300px;
+        margin: auto;
+    }
+}
